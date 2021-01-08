@@ -1,0 +1,86 @@
+/**index.wxss**/
+.top{
+  position: relative;
+  width: 750rpx;
+  height: 436rpx;
+  border-top: 2rpx solid #d9d9d9;
+  border-bottom: 2rpx solid #d9d9d9;
+  box-sizing: border-box;
+}
+
+.top-share{
+  position: absolute;
+  top: 34rpx;
+  right: 34rpx;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 40rpx; */
+}
+
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 60rpx 0 10rpx 0;
+  border-radius: 50%;
+}
+
+.userinfo-nickname{
+  font-size: 34rpx;
+}
+
+.ranking{
+  margin-top: 34rpx;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.rk-right, .rk-left{
+  width: 374rpx;
+  text-align: center;
+}
+
+
+
+.rk-left{
+  border-right: 2rpx solid #d9d9d9;
+}
+
+#center{
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  box-shadow: #999999 0rpx 15rpx 30rpx -30rpx;
+}
+
+.room{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100rpx;
+  font-size: 40rpx;
+  font-weight: 500;
+ 
+}
+.createRoom,.codeRoom{
+  width: 300rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+}
+.codeRoom{
+  border: 2rpx solid #e6763f;
+  color: #e6763f;
+}
+
+.createRoom{
+  color: white;
+}

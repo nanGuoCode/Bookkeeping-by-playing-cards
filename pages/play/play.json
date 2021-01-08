@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-modal": "../../conponents/modal/index",
+    "i-avatar": "../../conponents/avatar/index",
+    "i-input": "../../conponents/input/index",
+    "i-button": "../../conponents/button/index",
+    "i-icon": "../../conponents/icon/index"
+  }
+}

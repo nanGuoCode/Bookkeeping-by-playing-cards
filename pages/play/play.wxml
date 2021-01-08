@@ -1,0 +1,59 @@
+<!--pages/play/play.wxml-->
+<view class="play">
+<view class="scrollTop">
+<scroll-view scroll-x="true" class="scrollView" scroll-left="bottom"  class="scroll-view_H">
+ <view wx:for="{{usersInfo}}" wx:key="_id" wx:if="{{usersInfo}}" class="scrollBox">
+   <view class="scrollBlock">
+  <image wx:if="{{item.avatarUrl}}" src="{{item.avatarUrl}}" class="scrollImg" catchtap="transferA" id="{{index}}" data-hi="{{item}}"></image>
+ <view class="scrollNick" >{{item.nickName}}</view>
+ <view class="scrollNum">
+  <text decode="true" class="clOrange">￥&nbsp;{{item.total_num}}</text>
+</view>
+</view>
+ </view>
+</scroll-view>
+ <i-modal visible="{{isShow}}" show-ok="{{false}}" show-cancel="{{false}}" >
+ <view class="modalTop">
+  <image src="{{user.avatarUrl}}" class="scrollImg"></image>
+  <view class="modalTopRight">
+    <text>{{user.nickName}}</text>
+    <text style="font-weight: 800;" class="clOrange">￥{{user.total_num}}</text>
+  </view>
+ </view>
+   <view class="i-icon" bindtap="isShow">
+    <i-icon type="close" size="20" />
+   </view>
+
+ <view class="modalBottom">
+  退出房间
+ </view>
+</i-modal> 
+
+<i-modal visible="{{isShowExp}}" show-ok="{{false}}" show-cancel="{{false}}" >
+ <view class="modalTop">
+   <view class="modalTopL">
+   <image src="{{userInfo.avatarUrl}}" class="scrollImg"></image>
+   <text>{{userInfo.nickName}}</text>
+  </view>
+   <text class="expend">支出</text>
+   <text class="iconfont icon-biaotidanxiangjiantou arrows"></text>
+   <view class="modalTopR">
+  <image src="{{user.avatarUrl}}" class="scrollImg"></image>
+  <text>{{user.nickName}}</text>
+</view>
+
+ </view>
+   <view class="i-icon" bindtap="isShow">
+    <i-icon type="close" size="20" />
+   </view>
+  <view class="modalCenter">
+    <!-- <i-input  i-class="iInput" placeholder="输入支出金额" type="number" /> -->
+    <input type="number" model:value="{{value}}" class="iInput" placeholder="输入支出金额" auto-focus  />
+  </view>
+ <view class="modalBottom" bindtap="expend">
+  支出
+ </view>
+</i-modal>
+
+</view>
+</view>

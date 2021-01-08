@@ -1,0 +1,8 @@
+/* pages/login/login.wxss */
+.weui-btn{
+  width: 60%;
+}
+
+map{
+  width: 750rpx;
+}

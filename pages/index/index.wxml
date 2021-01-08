@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="index">
+<view class="top">
+<mp-icon extClass="top-share" icon="share" size="{{30}}" color="#f76a24"></mp-icon>
+<view class="userInfo">
+  <image src="{{userInfo.avatarUrl}}" background-size="cover" class="userinfo-avatar"></image>
+      <text class="userinfo-nickname  clBlack">{{userInfo.nickName}}</text>
+</view>
+<view class="ranking">
+  <view class="rk-left">
+<view class="clBlack" style="font-size:50rpx; font-weight:800;" >3</view>
+<text class="clGray2">好友排名</text>
+  </view>
+  <view class="rk-right">
+    <view class="clBlack" style="font-size:50rpx; font-weight:800;">87902</view>
+<view  class="clGray2">全球排行</view>
+  </view>
+</view>
+</view>
+<view id="center">
+  <text class="clGray1" >赢</text> <text class="clOrange" style="font-weight:600;">2次 </text> <text decode="true">&nbsp;/ &nbsp;</text>
+  <text class="clGray1" >  输</text> <text class="clOrange" style="font-weight:600;" >2次</text> <text decode="true">&nbsp; / &nbsp;</text>
+  <text class="clGray1" > 胜率</text> <text class="clOrange" style="font-weight:600;">50%</text>
+  <text class="clGray1" decode="true"> &nbsp;战绩></text>
+</view>
+
+<view class="room">
+<view class="createRoom clBkOrange" bindtap="createRoom" >我要开房</view>
+<view class="codeRoom">扫码加入房间</view>
+</view>
+<view class="bottom">
+  <view class="bottomLeft">反馈</view>
+  <view class="bottomRight">使用规则</view>
+</view>
+</view>

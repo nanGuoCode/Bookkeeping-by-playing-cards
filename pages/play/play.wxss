@@ -1,0 +1,115 @@
+/* pages/play/play.wxss */
+
+.scrollTop{
+  border-top: 2rpx solid #d9d9d9;
+  border-bottom: 2rpx solid #0dff4c;
+  height: 280rpx;
+  width: 750rpx;
+}
+
+
+.scrollBlock{
+  height: 280rpx;
+  width: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.scroll-view_H{
+  height: 280rpx;
+  width: 100%;
+  white-space: nowrap;  
+}
+
+.scrollBox{
+  display: inline-block;
+}
+
+.scrollImg {
+  /* margin-top: 20rpx; */
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+ 
+}
+
+.scrollNick{
+text-align: center;
+font-size: small;
+}
+
+.scrollNum{
+  font-size: small;
+  font-weight: 800;
+}
+
+.i-input{
+  margin: 10rpx 0;
+}
+
+.i-icon{
+  position: absolute;
+  top:6rpx;
+  right: 10rpx;
+}
+
+.modalTop{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 50rpx 0 80rpx 0;
+font-size: 34rpx;
+position: relative;
+}
+.modalTopRight{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10rpx;
+}
+
+.modalBottom{
+  width: 80%;
+  height: 90rpx;
+  font-size: 36rpx;
+  line-height: 90rpx;
+  color: #FFF;
+  background-color: #f76a24;
+margin:0 0 50rpx 63rpx ;
+border-radius: 14rpx;
+}
+
+.arrows{
+  position: absolute;
+  top: 24%;
+  left: 43%;
+  font-size: 80rpx;
+}
+
+.expend{
+  font-size: 30rpx;
+  color: black;
+  margin: 0 50rpx;
+}
+
+.modalTopL, .modalTopR{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.iInput{
+  border: 2rpx solid #e9e9e9;
+  height: 80rpx;
+  font-size: 40rpx;
+  color: #8d8d8d;
+  font-weight: 800;
+  margin: -20rpx 40rpx 40rpx ;
+  text-align: center;
+  line-height: 80rpx;
+}
